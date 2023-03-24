@@ -47,7 +47,8 @@ h4{
     font-family: 'Press Start 2P';
     font-style: normal;
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 3.8vw;
+    line-height: 5.9vw;
     color: #FFFFFF;
     margin: 15vw 0 5vw 0;
 }
@@ -67,11 +68,12 @@ p{
     font-weight:400;
     font-size: 1.5vw;
     color: #FFFFFF;
+    line-height: 3vw;
 }
 
 .flex-wrapper {
     display: flex;
-    margin-top: 20vw;
+    margin-top: 15vw;
 }
 
 /* To define how the book look on the screen: */
@@ -283,15 +285,18 @@ header {
 }
 
 #subtitle1{
-    margin: -6vw 20vw 0vw 20vw;
+    margin-left: 16vw;
+    margin-top: 31vw;
 }
 
 #sub1{
-    margin: 9vw 20vw 0vw 20vw;
+    margin-top: 0vw;
+    margin-left: 16vw;
+
 }
 
 #content1{
-    margin: -18vw 30vw 0 5vw;
+    margin: 6vw 30vw 0 5vw;
 }
 
 #img1 {
