@@ -19,8 +19,8 @@ h1{
     color: #FFFFFF;
     font-style:normal;
     font-weight:400;
-    font-size:32px;
-    line-height:40px;
+    font-size: 3vw;
+    margin: 0;
 }
 
 h2{
@@ -36,9 +36,10 @@ h3 {
     font-family:'Press Start 2P';
     font-style: normal;
     font-weight: 400;
-    font-size: 499px;
-    line-height: 499px;
+    font-size: 50vw;
+    margin: 0;
     color: #000000;
+    text-align: center;
     -webkit-text-stroke: 5px rgb(255, 255, 255);
 }
 
@@ -46,17 +47,17 @@ h4{
     font-family: 'Press Start 2P';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 60px;
+    font-size: 4vw;
     color: #FFFFFF;
+    margin: 15vw 0 5vw 0;
 }
 
 h5{
     font-family:'Orbitron';
     font-style:normal;
     font-weight:400;
-    font-size:21px;
-    line-height:26px;
+    font-size: 1.6vw;
+    width: 40vw;
     color: #FFFFFF;
 }
 
@@ -64,10 +65,14 @@ p{
     font-family:'Tomorrow';
     font-style:normal;
     font-weight:400;
-    font-size:17px;
-    line-height:26px;  
+    font-size: 1.5vw;
     color: #FFFFFF;
 }
+
+.flex-wrapper {
+    display: flex;
+}
+
 /* To define how the book look on the screen: */
 @media screen, pagedjs-ignore {
     body {
@@ -235,32 +240,30 @@ p{
     box-shadow: 0px -1px 0px 0px var(--pagedjs-crop-shadow);
 }
 
-#title{
-    position: absolute;
-    width: 69.5em;
-    height: 13.8em;
-    left: 8.5em;
-    top: 13.68em;
+header {
+    background-image: url(backimg1.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 134vw;
 }
-#titleback{
-    position: absolute;
-    width: 1280px;
-    height: 1980px;
-    left: -58px;
-    top: -80px;
+
+#title {
+    width: 80%;
+    margin: auto;
+    margin-top: 14vw;
+}
+#title > img {
+    width: 100%;
 }
 
 #intro{
-    position: absolute;
-    width: 609px;
-    height: 370px;
-    left: 382px;
-    top: 520px;
+    width: 40%;
+    margin: 5vw auto 0;
 
     font-family: 'Tomorrow';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1vw;
     line-height: 157.5%;
 
     text-align: center;
@@ -269,52 +272,30 @@ p{
 }
 
 #name{
-    position:absolute;
-    width:372px;
-    height:47px;
-    left:500px;
-    top:45px;
     text-align: center;
+    padding-top: 6vw;
 }
 
 #number1{
-    position: absolute;
-    width: 338px;
-    height: 565px;
-    left: 40px;
-    top: 1600px;
+    width: 30vw;
 }
 
 #subtitle1{
-    position: absolute;
-    width: 725px;
-    height: 70px;
-    left: 530px;
-    top: 2190px;
-
+    margin: -6vw 20vw 0vw 20vw;
 }
 
 #sub1{
-    position: absolute;
-    width: 355px;
-    height: 69px;
-    left: 538px;
-    top: 2430px;
+    margin: 9vw 20vw 0vw 20vw;
 }
 
 #content1{
-    position: absolute;
-    width: 829px;
-    height: 2896px;
-    left: 95px;
-    top: 2722px;
-   
+    margin: -18vw 30vw 0 5vw;
 }
 
-#img1{
-    position: absolute;
-    width: 884px;
-    height: 884px;
-    left: 530px;
-    top: 2220px;
+#img1 {
+    margin-top: 6vw;
+    background-image: url(bluehead.png);
+    width: 70vw;
+    height: 70vw;
+    background-size: contain;
 }
