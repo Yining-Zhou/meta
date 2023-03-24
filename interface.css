@@ -71,6 +71,7 @@ p{
 
 .flex-wrapper {
     display: flex;
+    margin-top: 20vw;
 }
 
 /* To define how the book look on the screen: */
@@ -239,7 +240,7 @@ p{
 .pagedjs_bleed-right .pagedjs_marks-crop:last-child{
     box-shadow: 0px -1px 0px 0px var(--pagedjs-crop-shadow);
 }
-
+/* title */
 header {
     background-image: url(backimg1.PNG);
     background-repeat: no-repeat;
@@ -276,6 +277,7 @@ header {
     padding-top: 6vw;
 }
 
+/* section 1 */
 #number1{
     width: 30vw;
 }
@@ -298,4 +300,12 @@ header {
     width: 70vw;
     height: 70vw;
     background-size: contain;
+}
+/* section 2*/
+
+#number2 {
+    display: inline;
+    width: 30vw;
+    margin-left: 50vw;
+    margin-top: 20vw;
 }
