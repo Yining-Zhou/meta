@@ -1,17 +1,73 @@
 /* CSS for Paged.js interface – v0.4 */
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
 /* Change the look */
 :root {
-    --color-background: whitesmoke;
-    --color-pageSheet: #cfcfcf;
+    --color-background: rgb(0, 0, 0);
+    --color-pageSheet: #9e7a7a;
     --color-pageBox: violet;
-    --color-paper: white;
+    --color-paper: rgb(155, 42, 42);
     --color-marginBox: transparent;
-    --pagedjs-crop-color: black;
-    --pagedjs-crop-shadow: white;
+    --pagedjs-crop-color: rgb(52, 132, 136);
+    --pagedjs-crop-shadow: rgb(0, 0, 0);
     --pagedjs-crop-stroke: 1px;
 }
+h1{
+    font-family:'Orbitron';
+    color: #FFFFFF;
+    font-style:normal;
+    font-weight:400;
+    font-size:32px;
+    line-height:40px;
+}
 
+h2{
+    font-family:'Tomorrow';
+    font-style:normal;
+    font-weight:400;
+    font-size:17px;
+    line-height:157.5%;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family:'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 499px;
+    line-height: 499px;
+    color: #000000;
+    -webkit-text-stroke: 5px rgb(255, 255, 255);
+}
+
+h4{
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+h5{
+    font-family:'Orbitron';
+    font-style:normal;
+    font-weight:400;
+    font-size:21px;
+    line-height:26px;
+    color: #FFFFFF;
+}
+
+p{
+    font-family:'Tomorrow';
+    font-style:normal;
+    font-weight:400;
+    font-size:17px;
+    line-height:26px;  
+    color: #FFFFFF;
+}
 /* To define how the book look on the screen: */
 @media screen, pagedjs-ignore {
     body {
@@ -177,4 +233,88 @@
 .pagedjs_bleed-left .pagedjs_marks-crop:last-child,
 .pagedjs_bleed-right .pagedjs_marks-crop:last-child{
     box-shadow: 0px -1px 0px 0px var(--pagedjs-crop-shadow);
+}
+
+#title{
+    position: absolute;
+    width: 69.5em;
+    height: 13.8em;
+    left: 8.5em;
+    top: 13.68em;
+}
+#titleback{
+    position: absolute;
+    width: 1280px;
+    height: 1980px;
+    left: -58px;
+    top: -80px;
+}
+
+#intro{
+    position: absolute;
+    width: 609px;
+    height: 370px;
+    left: 382px;
+    top: 520px;
+
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 157.5%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#name{
+    position:absolute;
+    width:372px;
+    height:47px;
+    left:500px;
+    top:45px;
+    text-align: center;
+}
+
+#number1{
+    position: absolute;
+    width: 338px;
+    height: 565px;
+    left: 40px;
+    top: 1600px;
+}
+
+#subtitle1{
+    position: absolute;
+    width: 725px;
+    height: 70px;
+    left: 530px;
+    top: 2190px;
+
+}
+
+#sub1{
+    position: absolute;
+    width: 355px;
+    height: 69px;
+    left: 538px;
+    top: 2430px;
+}
+
+#content1{
+    position: absolute;
+    width: 829px;
+    height: 2896px;
+    left: 95px;
+    top: 2722px;
+   
+}
+
+#img1{
+    position: absolute;
+    width: 884px;
+    height: 884px;
+    left: 530px;
+    top: 2220px;
 }

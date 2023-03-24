@@ -1,6 +1,5 @@
 body {
-  font-family: sans-serif;
-  background: lightgray;
+  background: rgb(99, 92, 92);
 }
 
 h2 {
@@ -9,7 +8,7 @@ h2 {
 
 @media print {
   body {
-    background: white;
+    background: rgb(0, 0, 0);
   }
 }
 
