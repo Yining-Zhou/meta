@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@700;800&display=swap');
 /* Change the look */
 :root {
     --color-background: rgb(0, 0, 0);
@@ -71,11 +72,24 @@ p{
     line-height: 3vw;
 }
 
+h6{
+    font-family:'Tomorrow';
+    font-style:normal;
+    font-weight:700;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    line-height: 3vw;
+}
+
+
 .flex-wrapper {
     display: flex;
     margin-top: 15vw;
 }
-
+.flex-wrapper2 {
+    display: flex;
+    margin-top: 15vw;
+}
 /* To define how the book look on the screen: */
 @media screen, pagedjs-ignore {
     body {
@@ -309,8 +323,31 @@ header {
 /* section 2*/
 
 #number2 {
-    display: inline;
+   
     width: 30vw;
-    margin-left: 50vw;
+    margin-left: 48vw;
     margin-top: 20vw;
+}
+
+#sub2 {
+    margin-left: 5.5vw;
+    margin-top: 5vw;
+}
+
+#img2 {
+    margin-top: 5vw; 
+    margin-left: 5.5vw;
+}
+
+#content2-1{
+    margin-top: 5vw;
+    margin-left: 5.5vw;
+    width: 50vw;
+    
+}
+
+#content2-2{
+    margin-top: 8vw;
+    margin-left: 35vw;
+    width:50vw;
 }
