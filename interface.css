@@ -31,7 +31,7 @@ h2{
     font-weight:400;
     font-size:40px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: #000000;
     
 }
 /* caption */
@@ -248,16 +248,40 @@ p{
 }
 
 .page2 {
-   position: absolute;
-    width: 5in;
-    height: 8in;
-    background-color: rgb(196, 118, 118);
+  width: 5in;
+  height: 8in;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.page2 > .row {
+    display: flex;
+}
+
+.page2 > .row > .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page2 img {
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+}
+
 
 .page3 {
     width: 5in;
     height: 8in;
     background-color: aquamarine;
+}
+
+.page4 {
+    width: 5in;
+    height: 8in;
+    background-color: rgb(54, 65, 61);
 }
 
  
