@@ -1,11 +1,12 @@
 body {
   background: rgb(255, 255, 255);
   margin: 0;
+  counter-reset: page;
 }
-
+/*
 h2 {
   break-before: page;
-}
+} */
 
 @media print {
   body {
@@ -16,7 +17,8 @@ h2 {
 @page {
   size: 5in 8in;
   margin-top: 0in;
-  margin-bottom: 0in;
+  margin-bottom: 0in; 
+
 }
 @page:left {
   margin-left: 0in;

@@ -7,22 +7,22 @@
 /* font-family: 'Libre Barcode 39 Text', cursive; */
 /* Change the look */
 :root {
-    --color-background: rgb(136, 136, 136);
+    --color-background: rgb(153, 153, 153);
     --color-pageSheet: #ffffff;
     --color-pageBox: rgb(44, 44, 44);
     --color-paper: rgb(255, 255, 255);
     --color-marginBox: transparent;
-    --pagedjs-crop-color: rgb(52, 132, 136);
+    --pagedjs-crop-color: rgb(0, 0, 0);
     --pagedjs-crop-shadow: rgb(0, 0, 0);
     --pagedjs-crop-stroke: 0px;
 }
 h1{
-   
-    color: #ffffff;
-    font-weight:400;
-    font-size: 8vw;
-    text-align: center;
-    margin-top: 3.3in;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.5px;
+    line-height: 27.43px;
+    text-align: justify;
 }
 /* subtitle */
 h2{
@@ -43,7 +43,6 @@ h3 {
     margin: 0;
     color: #000000;
     text-align: center;
-    -webkit-text-stroke: 5px rgb(255, 255, 255);
 }
 /* page2 */
 h4 {
@@ -76,7 +75,7 @@ p{
         width: calc(var(--pagedjs-width) * 2);
         flex: 0;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 1 auto;
     }
 
     .pagedjs_page {
@@ -85,7 +84,7 @@ p{
         margin: 0;
         flex-shrink: 0;
         flex-grow: 0;
-        margin-top: 10mm;
+        margin-top: 9mm;
     }
 
     .pagedjs_first_page {
@@ -94,11 +93,11 @@ p{
     }
 
     .pagedjs_page:last-of-type {
-        margin-bottom: 10mm;
+        margin-bottom: 0mm;
     }
 
     .pagedjs_pagebox{
-        box-shadow: 0 0 0 1px var(--color-pageBox);
+        box-shadow: 0 0 0 0px var(--color-pageBox);
     }
 
     .pagedjs_left_page{
@@ -247,6 +246,7 @@ p{
     text-align: center;
 }
 
+/* p2 */
 .page2 {
   width: 5in;
   height: 8in;
@@ -258,6 +258,7 @@ p{
 
 .page2 > .row {
     display: flex;
+    z-index: 6;
 }
 
 .page2 > .row > .column {
@@ -271,17 +272,320 @@ p{
     margin: 3px;
 }
 
+#page2content  {
+    position: absolute;
+    width: 175px;
+    height: 90px;
+    left: 42px;
+    top: 339px;
+    z-index: 11;
+}
 
+#p2cap {
+    position: absolute;
+    width: 161px;
+    height: 12px;
+    left: 235px;
+    top: 710px;
+    z-index: 12;
+}
+/* p3 */
 .page3 {
     width: 5in;
     height: 8in;
-    background-color: aquamarine;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
 }
 
+#p3c {
+    position: absolute;
+    width: 480px;
+    height: 756px;
+    left: 1px;
+    top: 3px;
+}
+
+span {
+    color: #DA9CC3;
+}
+/* p4 */
 .page4 {
     width: 5in;
     height: 8in;
-    background-color: rgb(54, 65, 61);
+    background-color: #ffffff;
 }
 
- 
+#p4img{
+    position: absolute;
+    width: 386px;
+    height: 569px;
+    left: 40px;
+    top: 61px;
+}
+
+#p4cap{
+    position: absolute;
+    width: 238px;
+    height: 10px;
+    left: 121px;
+    top: 680px;
+    text-align: center;
+}
+/* p5 */
+.page5 {
+    width: 5in;
+    height: 8in;
+    background: url(./unboximg/bk5.png) no-repeat;
+
+}
+
+#subtitle {
+    position: absolute;
+    width: 260px;
+    height: 190px;
+    left: 60px;
+    top: 120px;
+}
+#pagecontent {
+    position: absolute;
+    width: 332px;
+    height: 420px;
+    left: 60px;
+    top: 300px;
+}
+/* p6 */
+.page6 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+
+#sonnysets {
+    position: absolute;
+    width: 480px;
+    height: 489px;
+    left: 0px;
+    top: 136px;
+}
+#bigfigure {
+    position: absolute;
+    width: 273px;
+    height: 417px;
+    left: 207px;
+    top: 351px;
+}
+#p6cap {
+    position: absolute;
+    width: 109px;
+    height: 10px;
+    left: 38px;
+    top: 89px;
+}
+/* p7 */
+.page7 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+#p7back {
+    width: 5in;
+    height: 8in;
+    z-index: 0;
+}
+/* p9 */
+.page8 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+#p8img {
+    position: absolute;
+    width: 480px;
+    height: 558px;
+    left: 0px;
+    top: 102px;
+}
+#p8cap {
+    position: absolute;
+    width: 216px;
+    height: 10px;
+    left: 132px;
+    top: 376px;
+}
+
+/* p9 */
+.page9 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+#p9back {
+    width: 5in;
+    height: 8in;
+    z-index: 0;
+}
+/* p10 */
+.page10 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+
+#jomalon {
+    position: absolute;
+    width: 294px;
+    height: 304px;
+    left: 72px;
+    top: 81px;
+
+}
+#ysl{
+    position: absolute;
+    width: 409px;
+    height: 238px;
+    left: 36px;
+    top: 443px;
+}
+
+#jcap{
+    position: absolute;
+    width: 181px;
+    height: 10px;
+    left: 129px;
+    top: 392px;
+}
+
+#ycap{
+    position: absolute;
+    width: 133px;
+    height: 10px;
+    left: 153px;
+    top: 678px;
+}
+/* p11 */
+.page11 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+#p11back {
+    width: 5in;
+    height: 8in;
+    z-index: 0;
+}
+/* p12 */
+.page12 {
+    width: 5in;
+    height: 8in;
+   background-color: #000000;
+   background: url(./unboximg/p12.png);
+}
+#p12cap {
+    position: absolute;
+    width: 382px;
+    height: 10px;
+    left: 49px;
+    top: 708px;
+}
+
+.page13 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+/*14*/
+
+.page14 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+
+#box1{
+    position: absolute;
+    width: 296px;
+    height: 278px;
+    left: 184px;
+    top: 0px;
+}
+#box2{
+    position: absolute;
+    width: 318px;
+    height: 395px;
+    left: 0px;
+    top: 84px;
+}
+#box3{
+    position: absolute;
+    width: 367px;
+    height: 410px;
+    left: 113px;
+    top: 352px;   
+}
+
+#boxcap{
+    position: absolute;
+    width: 157px;
+    height: 10px;
+    left: 27px;
+    top: 722px;
+}
+.page15 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+#subtitle15 {
+    position: absolute;
+    width: 319px;
+    height: 190px;
+    left: 60px;
+    top: 120px;
+}
+.page16 {
+    width: 5in;
+    height: 8in;
+    background-color: #ffffff;
+}
+
+#qrcode {
+    position: absolute; 
+    left: 46px;
+    top: 560px;
+    bottom: 52px;
+}
+
+#reference {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: 190px;
+    bottom: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+strong {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 8px;
+    margin: 0;
+    color: #000000;
+    text-align: center;
+}
+
+li {
+    list-style-type:none;
+    line-height: 14px;
+    border-bottom: #e7a0de 0.5px solid;
+}
+
+li:first-child {
+    border-bottom: #e7a0de 2px solid;
+}
+
+li:last-child{
+    border-bottom: #e7a0de 2px solid;
+}
