@@ -13,18 +13,28 @@ h2 {
     background: rgb(255, 255, 255);
   }
 }
-
+@page {
+  margin: 0in;
+}
 @page {
   size: 5in 8in;
   margin-top: 0in;
   margin-bottom: 0in; 
-
+  break-inside: avoid;
 }
 @page:left {
   margin-left: 0in;
   margin-right: 0in;
+  @bottom-center {
+     content: “123123”;
+    }
 }
 @page:right {
   margin-left: 0in;
   margin-right: 0in;
 }
+/*
+img {
+  max-width: 100% !important;
+}
+*/
