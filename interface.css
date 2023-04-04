@@ -76,7 +76,7 @@ p{
         width: calc(var(--pagedjs-width) * 2);
         flex: 0;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 1 auto;
     }
 
     .pagedjs_page {
@@ -303,7 +303,7 @@ p{
     position: absolute;
     width: 5in;
     height: 756px;
-    left: -0in;
+    left: 0in;
     top: 3px;
 }
 
