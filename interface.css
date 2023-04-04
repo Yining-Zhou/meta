@@ -76,7 +76,7 @@ p{
         width: calc(var(--pagedjs-width) * 2);
         flex: 0;
         flex-wrap: wrap;
-        margin: 1 auto;
+        margin: 0 auto;
     }
 
     .pagedjs_page {
