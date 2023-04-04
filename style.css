@@ -13,28 +13,39 @@ h2 {
     background: rgb(255, 255, 255);
   }
 }
+
 @page {
-  margin: 0in;
-}
-@page {
-  size: 5in 8in;
+  size: 4.75in 8in;
   margin-top: 0in;
   margin-bottom: 0in; 
   break-inside: avoid;
+  bleed: 0.25in;
+  marks: crop;
 }
 @page:left {
   margin-left: 0in;
-  margin-right: 0in;
-  @bottom-center {
-     content: “123123”;
-    }
+  margin-right: -0.25in;
+
+@bottom-center {
+  z-index: 9999;
+  margin-top: -0.3in;
+  content: counter(page);
+} 
 }
 @page:right {
-  margin-left: 0in;
-  margin-right: 0in;
+  margin-left: -0.25in;
+  margin-right:0;
+  @bottom-center {
+    z-index: 9999;
+    margin-top: -0.3in;
+    content: counter(page);
+  } 
 }
-/*
-img {
-  max-width: 100% !important;
+.page1, .page3 {
+  page: noPageNumber;
 }
-*/
+@page noPageNumber {
+  @bottom-center {
+    content: none;
+  }
+}

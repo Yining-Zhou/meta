@@ -65,6 +65,7 @@ p{
 
 
 /* To define how the book look on the screen: */
+
 @media screen, pagedjs-ignore {
     body {
         background-color: var(--color-background);
@@ -146,7 +147,7 @@ p{
 
     /* uncomment this part for recto/verso book : ------------------------------------ */
 
-    
+    /*
     .pagedjs_pages {
         flex-direction: column;
         width: 100%;
@@ -176,7 +177,7 @@ p{
     .pagedjs_right_page{
         left: 0; 
     } 
-    
+    */
     
     
 
@@ -300,9 +301,9 @@ p{
 
 #p3c {
     position: absolute;
-    width: 480px;
+    width: 5in;
     height: 756px;
-    left: 1px;
+    left: -0in;
     top: 3px;
 }
 
